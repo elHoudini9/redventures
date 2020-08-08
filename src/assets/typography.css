@@ -1,0 +1,156 @@
+.paragraph {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.paragraph.large {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.paragraph.special {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.paragraph.medium {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.headers {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.headers.h2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.headers.h3 {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.label {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.label.bold {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.label.medium {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.label.small {
+  font-size: 8px;
+  line-height: 10px;
+}
+
+
+@media (min-width: 320px) {
+  .paragraph.large {
+    font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1000 - 300)));
+    line-height: calc(22px + (24 - 22) * ((100vw - 300px) / (1000 - 300)));
+  }
+
+  .paragraph.special {
+    font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1000 - 300)));
+    line-height: calc(24px + (26 - 24) * ((100vw - 300px) / (1000 - 300)));
+  }
+
+  .paragraph.medium {
+    font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1000 - 300)));
+    line-height: calc(20px + (22 - 20) * ((100vw - 300px) / (1000 - 300)));
+  }
+
+  .headers.h2 {
+    font-size: calc(24px + (30 - 24) * ((100vw - 300px) / (1000 - 300)));
+    line-height: calc(32px + (38 - 32) * ((100vw - 300px) / (1000 - 300)));
+  }
+
+  .headers.h3 {
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1000 - 300)));
+    line-height: calc(19px + (23 - 19) * ((100vw - 300px) / (1000 - 300)));
+  }
+
+  .label.bold {
+    font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1000 - 300)));
+    line-height: calc(15px + (19 - 15) * ((100vw - 300px) / (1000 - 300)));
+  }
+
+  .label.medium {
+    font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1000 - 300)));
+    line-height: calc(12px + (14 - 12) * ((100vw - 300px) / (1000 - 300)));
+  }
+
+  .label.small {
+    font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1000 - 300)));
+    line-height: calc(10px + (12 - 10) * ((100vw - 300px) / (1000 - 300)));
+  }
+}
+
+
+@media (min-width: 992px) {
+  .paragraph.large {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .paragraph.special {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .paragraph.medium {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .headers.h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .headers.h3 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .label.bold {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .label.medium {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .label.small {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}

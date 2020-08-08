@@ -1,0 +1,25 @@
+.light-grey {
+  color: #646d70;
+}
+
+.dark-green {
+  color: #222f33;
+}
+
+.dark-green-bg {
+  background-color: #222f33;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.lighten {
+  mix-blend-mode: normal;
+  /* Original design was set to 0.7, but 0.6 looks a lot more like the Figma design */
+  opacity: 0.6;
+}
