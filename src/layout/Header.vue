@@ -1,8 +1,6 @@
 <template>
   <BgImgContainer id="header" hasGradient>
     <NavBar :links="navBarLinks" btnLabel="contact" />
-    <SideBar :links="sideBarLinks" />
-
     <b-container class="content">
       <b-row>
         <b-col md="7" cols="12">
@@ -19,6 +17,7 @@
           <VideoPlayer class="video-player" name="video" />
         </b-col>
       </b-row>
+      <SideBar :links="sideBarLinks" />
     </b-container>
   </BgImgContainer>
 </template>
