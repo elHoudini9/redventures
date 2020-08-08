@@ -12,7 +12,9 @@
           <b-nav-item v-for="link in links" :key="link" class="mr-3">
             <span class="label medium white">{{ link }}</span>
           </b-nav-item>
-          <Btn v-if="btnLabel" class="link-button">Contact</Btn>
+          <b-nav-item class="mr-3">
+            <Btn v-if="btnLabel" class="link-button">Contact</Btn>
+          </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-container>
