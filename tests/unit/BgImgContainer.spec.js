@@ -20,16 +20,4 @@ describe('BgImgContainer.vue', () => {
     })
     expect(wrapper.attributes().style).toContain('background-color: blue')
   })
-
-  it('should change the style attribute: `backgroundImage` to `blue` when `bgColor` prop is `blue`', () => {
-    const wrapper = shallowMount(BgImgContainer, {
-      propsData: {
-        hasGradient: true
-      }
-    })
-
-    console.log(wrapper.attributes().style)
-
-    // expect(wrapper.attributes().style).toContain('background-color: blue')
-  })
 })

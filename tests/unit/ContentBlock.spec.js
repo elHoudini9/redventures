@@ -32,7 +32,7 @@ describe('ContentBlock.vue', () => {
     const wrapper = shallowMount(ContentBlock, {
       propsData: { size: 'small' }
     })
-    const contentStyle = wrapper.find('#content').attributes().style
+    const contentStyle = wrapper.find('#body').attributes().style
     expect(contentStyle).toContain('margin-top: 4px')
   })
 
@@ -40,7 +40,7 @@ describe('ContentBlock.vue', () => {
     const wrapper = shallowMount(ContentBlock, {
       propsData: { size: 'large' }
     })
-    const contentStyle = wrapper.find('#content').attributes().style
+    const contentStyle = wrapper.find('#body').attributes().style
     expect(contentStyle).toContain('margin-top: 12px')
   })
 
@@ -48,7 +48,15 @@ describe('ContentBlock.vue', () => {
     const wrapper = shallowMount(ContentBlock, {
       propsData: { headerClass: 'header' }
     })
-    const contentClass = wrapper.find('#header').classes()
-    expect(contentClass).toContain('header')
+    const headerClasses = wrapper.find('#header').classes()
+    expect(headerClasses).toContain('header')
+  })
+
+  it('should have apply the `bodyClass` prop to the body div', () => {
+    const wrapper = shallowMount(ContentBlock, {
+      propsData: { bodyClass: 'paragraph' }
+    })
+    const bodyClasses = wrapper.find('#body').classes()
+    expect(bodyClasses).toContain('paragraph')
   })
 })

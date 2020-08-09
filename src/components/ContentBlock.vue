@@ -3,7 +3,7 @@
     <div id="header" :class="[headerClass, { 'no-header': !hasHeader }]">
       <slot name="header" />
     </div>
-    <div id="content" :class="bodyClass" :style="styleObj">
+    <div id="body" :class="bodyClass" :style="styleObj">
       <slot name="default" />
     </div>
     <div id="action" v-if="hasAction">
