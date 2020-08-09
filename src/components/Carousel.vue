@@ -11,7 +11,7 @@ export default {
     images: {
       type: Array,
       default: () => [],
-      validator: val => val.length <= 7
+      validator: val => val.length >= 0 && val.length <= 7
     }
   }
 }
