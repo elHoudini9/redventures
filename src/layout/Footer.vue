@@ -75,7 +75,6 @@ br {
   }
 
   .col {
-    background-color: #222f33;
     height: 92px;
     line-height: 92px;
   }

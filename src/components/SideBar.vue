@@ -53,9 +53,4 @@ div {
     top: 43%;
   }
 }
-@media (min-width: 1200px) {
-  div {
-    top: 43%;
-  }
-}
 </style>
