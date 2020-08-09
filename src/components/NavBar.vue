@@ -48,18 +48,9 @@ export default {
   margin-top: 10px;
 }
 
-a.nav-link:hover {
-  padding: 10px 10px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 @media (min-width: 768px) {
   .link-button {
     margin-top: auto;
-  }
-
-  a.nav-link {
   }
 }
 </style>
