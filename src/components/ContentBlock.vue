@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div :class="[headerClass, { 'no-header': !hasHeader }]">
+    <div id="header" :class="[headerClass, { 'no-header': !hasHeader }]">
       <slot name="header" />
     </div>
-    <div :class="bodyClass" :style="styleObj">
+    <div id="content" :class="bodyClass" :style="styleObj">
       <slot name="default" />
     </div>
-    <div v-if="hasAction" class="action">
+    <div id="action" v-if="hasAction">
       <slot name="action" />
     </div>
   </div>
@@ -46,11 +46,7 @@ export default {
 </script>
 
 <style scoped>
-.content {
-  padding-top: 12px;
-}
-
-.action {
+#action {
   padding-top: 15px;
 }
 
