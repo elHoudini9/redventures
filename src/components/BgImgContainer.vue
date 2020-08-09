@@ -26,7 +26,7 @@ export default {
   computed: {
     styleObj() {
       const gradient = this.hasGradient
-        ? 'linear-gradient(135deg, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.6)), linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.6)),'
+        ? 'linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6)), linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6)),'
         : ''
       return {
         backgroundImage: `${gradient} url('images/${this.imgName}')`,

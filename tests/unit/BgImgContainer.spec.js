@@ -1,4 +1,4 @@
-/* global describe, it, expect */
+// /* global describe, it, expect */
 
 import { shallowMount } from '@vue/test-utils'
 import BgImgContainer from '@/components/BgImgContainer.vue'
@@ -19,5 +19,17 @@ describe('BgImgContainer.vue', () => {
       }
     })
     expect(wrapper.attributes().style).toContain('background-color: blue')
+  })
+
+  it('should change the style attribute: `backgroundImage` to `blue` when `bgColor` prop is `blue`', () => {
+    const wrapper = shallowMount(BgImgContainer, {
+      propsData: {
+        hasGradient: true
+      }
+    })
+
+    console.log(wrapper.attributes().style)
+
+    // expect(wrapper.attributes().style).toContain('background-color: blue')
   })
 })
